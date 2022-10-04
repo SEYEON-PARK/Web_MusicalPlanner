@@ -3,16 +3,27 @@
 <head>
     <meta charset="utf-8">
     <style>
+        html{
+            height: 100%;
+            width: 100%;
+        }
+        body{
+            background-color: #EEF2E6;
+            height: 100%;
+            width: 100%;
+        }
+        div#container{
+            display: flex;
+            height: 100%;
+            width: 100%;
+        }
         div#a{
             width:50%;
+            height:100px;
         }
         div#b{
-            display: inline;
-            margin-left: 50%;
-            width:50%;
-            padding-top: 600px;
-            padding-bottom: 108px;
-            padding-right: 768px;
+            width: 49%;
+            height: 98%;
             background-color: #286d4c;
         }
         table{
@@ -20,7 +31,8 @@
             border:5px solid #286d4c;
             width:500px;
             height: 300px;
-            margin-left: 10.5%;
+            margin-left: auto;
+            margin-right: auto;
             margin-top: 100px;
         }
         caption{
@@ -30,6 +42,7 @@
         }
         tr:nth-child(1) th{
             border:3px solid #286d4c;
+            background-color: rgb(211, 238, 229)
         }
         td{
             background-color: rgb(240, 255, 250);
@@ -56,70 +69,72 @@
     </style>
 </head>
 <body>
-    <div id="a">
-        <table>
-            <caption>
-                <span id="left">&nbsp;&nbsp;</span>
-                2022년 6월
-                <a id="right" href="planner2207.html">&gt;</a>
-            </caption>
-            <tr>
-                <th>일</th>
-                <th>월</th>
-                <th>화</th>
-                <th>수</th>
-                <th>목</th>
-                <th>금</th>
-                <th>토</th>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
-    </div>
-    <div id="b">
+    <div id="container">
+        <div id="a">
+            <table>
+                <caption>
+                    <span id="left">&nbsp;&nbsp;</span>
+                    2022년 6월
+                    <a id="right" href="planner2207.html">&gt;</a>
+                </caption>
+                <tr>
+                    <th>일</th>
+                    <th>월</th>
+                    <th>화</th>
+                    <th>수</th>
+                    <th>목</th>
+                    <th>금</th>
+                    <th>토</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div id="b">
+        </div>
     </div>
 </body>
 </html>
