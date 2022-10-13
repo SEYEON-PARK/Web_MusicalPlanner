@@ -87,10 +87,7 @@
             border-radius: 3%;
         }
         iframe#Fanta{
-            opacity: 0;
-        }
-        img#Fanta:active{
-            opacity: 1;
+            visibility: hidden;
         }
         @media screen and (max-width:1024px){
             div#a{
@@ -224,7 +221,7 @@
                     <td></td>
                     <td></td>
                     <td>1</td>
-                    <td>2 <br> <img id="Fanta" src="뮤지컬 환타.jpeg" onclick="upSite(id)"></td>
+                    <td>2 <br> <!--<button type="button" onclick="upSite(inFanta)">--><img type="button" onclick="upSite(inFanta)" id="Fanta" src="뮤지컬 환타.jpeg"><!--</button>--></td>
                     <td>3</td>
                     <td>4</td>
                     <td>5</td>
@@ -268,14 +265,13 @@
             </table>
         </div>
         <div id="b">
-            <iframe id="Fanta" src="220602_Fanta.html">
+            <iframe id="inFanta" src="220602_Fanta.html">
             </iframe>
         </div>
     </div>
     <script>
-
         function upSite(para){
-            document.getElementById("iframe#"+para).style.display="block";
+            document.getElementById(para).style.visibility="visible";
         }
     </script>
 </body>
