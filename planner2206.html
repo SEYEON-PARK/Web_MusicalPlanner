@@ -2,6 +2,11 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        })
+    </script>
     <style>
         html{
             height: 100%;
@@ -81,13 +86,11 @@
             margin-right: 30px;
         }
         iframe{
+            display: none;
             margin: 3%;
             width: 93%;
             height: 93%;
             border-radius: 3%;
-        }
-        iframe#Fanta{
-            visibility: hidden;
         }
         @media screen and (max-width:1024px){
             div#a{
@@ -221,7 +224,7 @@
                     <td></td>
                     <td></td>
                     <td>1</td>
-                    <td>2 <br> <!--<button type="button" onclick="upSite(inFanta)">--><img type="button" onclick="upSite(inFanta)" id="Fanta" src="뮤지컬 환타.jpeg"><!--</button>--></td>
+                    <td>2 <br> <!--<button type="button" onclick="upSite(inFanta)">--><img id="Fanta" onclick="upSite(inFanta)" src="뮤지컬 환타.jpeg"><!--</button>--></td>
                     <td>3</td>
                     <td>4</td>
                     <td>5</td>
@@ -271,7 +274,7 @@
     </div>
     <script>
         function upSite(para){
-            document.getElementById(para).style.visibility="visible";
+            document.getElementById(para).style.display="inline";
         }
     </script>
 </body>
